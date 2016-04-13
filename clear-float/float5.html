@@ -17,11 +17,18 @@
 			float: right;
 			background-color: #66CDAA;
 		}
-		
+		.clear {
+			zoom: 1;
+		}
+		.clear:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
 	</style>
 </head>
 <body>
-	<div id="container">
+	<div id="container" class="clear">
 		<div class="article">
 			<p>article article article article article article article article</p> 
 		</div>
@@ -29,5 +36,6 @@
 			<p>aside aside aside aside aside aside </p>
 		</div>
 	</div>
+	<div>some text</div>
 </body>
 </html>
